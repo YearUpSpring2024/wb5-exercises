@@ -12,7 +12,7 @@ let matching = null;
 
 // matching = menu.find(doseMenuObjectHaveId);
 
-matching = find((m) => m.id == searchId)
+matching = menu.find((m) => m.id == searchId)
 
 if (matching != null) {
     console.log(matching.item + " cost $ " + matching.price)
