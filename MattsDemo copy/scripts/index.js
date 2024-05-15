@@ -19,21 +19,15 @@ window.onload = () => {
 
 function onToyCategoryDropdownChange() {
     console.log("onToyCategoryDropdownChange")
-
     //hide the details row to hide previous results
     hideDetailRow();
-
     //figure out what value was selected (which category)
     let selectedCategory = toyCategoryDropdown.value;
     console.log(selectedCategory);
-
     //clear out toyList from previous selection
     toyList.options.length = 0;
-
     //loop through correct array and add values to the toyList one at a time.
     let toysInCategory = getToysForCategoryCode(selectedCategory);
-
-
     console.log(toysInCategory);
 
     for (let toy of toysInCategory) {

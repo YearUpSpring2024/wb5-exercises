@@ -32,8 +32,6 @@ function onToCategoryDropdownChange() {
         option.innerHTML = toy.name;
         toyList.appendChild(option);
     }
-
-
 }
 
 function onToyListchange() {
